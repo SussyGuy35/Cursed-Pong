@@ -1,0 +1,1 @@
+if (bbox_bottom <= 0 or bbox_top >= room_width) instance_destroy()
