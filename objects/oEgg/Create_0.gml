@@ -10,6 +10,6 @@ function broke(bullet)
 		broken = true
 		image_index = 1
 		oGame.egg -= 1
-		if (bullet.is_super_bullet) instance_destroy(bullet)
+		if (!bullet.is_super_bullet) instance_destroy(bullet)
 	}
 }

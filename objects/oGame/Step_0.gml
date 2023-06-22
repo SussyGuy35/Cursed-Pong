@@ -50,5 +50,11 @@ else
 	showing_message = 1
 	message_to_show = "Cursed\nPong\n\nPress\nEnter"
 	
-	if (input.start_game) game_started = true
+	if (input.start_game)
+	{
+		game_started = true
+		mouse_clear(mb_left)
+		input.left = false
+		input.right = false
+	}
 }

@@ -15,8 +15,11 @@ showing_message = 0
 message_to_show = ""
 
 function reset_game(){
-	oEgg.broken = false
-	oEgg.image_index = 0
+	for (var i = 0; i < instance_number(oEgg); i++){
+		var eg = instance_find(oEgg,i)
+		eg.broken = false
+		eg.image_index = 0
+	}
 	instance_destroy(oEnemy)
 	instance_destroy(oEnemyBullet)
 	egg = instance_number(oEgg)
