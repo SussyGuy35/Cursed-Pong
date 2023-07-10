@@ -14,7 +14,7 @@ egg = instance_number(oEgg)
 showing_message = 0
 message_to_show = ""
 
-function reset_game(){
+reset_game = function(){
 	for (var i = 0; i < instance_number(oEgg); i++){
 		var eg = instance_find(oEgg,i)
 		eg.broken = false
@@ -33,7 +33,7 @@ function reset_game(){
  * @param {real} spwnxpos x pos to spwn
  * @param {real} spwnypos y pos to spwn
  */
-function spawn_enemy(spwnxpos,spwnypos){
+spawn_enemy = function(spwnxpos,spwnypos){
 	instance_create_layer(6 + (spwnxpos - 1)*12,-(spwnypos-1)*12,layer,oEnemy)
 }
 
@@ -42,7 +42,7 @@ function spawn_enemy(spwnxpos,spwnypos){
  * @desc Spwn enemy wave
  * @param {real} wave Enemy wave to spawn
  */
-function enemy_wave(wave){
+enemy_wave = function(wave){
 	switch wave {
 		case 1:
 			spawn_enemy(2,1)

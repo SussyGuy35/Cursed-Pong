@@ -2,7 +2,7 @@ broken = false
 
 image_index = 0
 
-function broke(bullet)
+broke = function(bullet)
 {
 	if (!broken)
 	{

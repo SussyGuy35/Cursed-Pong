@@ -1,1 +1,1 @@
-broke(other)
+self.broke(other)

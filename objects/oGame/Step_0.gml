@@ -30,7 +30,7 @@ if (game_started)
 		
 			if (input.start_game)
 			{
-				reset_game()
+				self.reset_game()
 			}
 		}
 	}
@@ -41,7 +41,7 @@ if (game_started)
 		
 		if (input.start_game)
 		{
-			reset_game()
+			self.reset_game()
 		}
 	}
 }
