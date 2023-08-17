@@ -21,6 +21,7 @@ reset_game = function(){
 		eg.image_index = 0
 	}
 	instance_destroy(oEnemy)
+	instance_destroy(oBoss)
 	instance_destroy(oEnemyBullet)
 	egg = instance_number(oEgg)
 	won = false
